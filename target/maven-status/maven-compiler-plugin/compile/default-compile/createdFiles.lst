@@ -1,0 +1,8 @@
+com/example/vehiclerental/entity/Vehicle.class
+com/example/vehiclerental/controller/RentalController.class
+com/example/vehiclerental/VehicleRentalSystemApplication.class
+com/example/vehiclerental/controller/VehicleController.class
+com/example/vehiclerental/entity/Rental.class
+com/example/vehiclerental/repository/RentalRepository.class
+com/example/vehiclerental/repository/VehicleRepository.class
+com/example/vehiclerental/service/VehicleService.class

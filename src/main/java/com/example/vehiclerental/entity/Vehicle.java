@@ -8,13 +8,13 @@ public class Vehicle {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String model;  // make sure your JSON contains this
+    private String model;  
     private String type;
     private boolean rented;
 
-    public Vehicle() {}  // Default constructor needed for JSON mapping
+    public Vehicle() {}  
 
-    // Getters & setters
+
     public Long getId() { return id; }
     public void setId(Long id) { this.id = id; }
 

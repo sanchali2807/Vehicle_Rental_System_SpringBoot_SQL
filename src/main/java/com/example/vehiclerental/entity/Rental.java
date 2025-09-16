@@ -23,7 +23,7 @@ public class Rental {
         this.returnDate = returnDate;
     }
 
-    // Getters & Setters
+
     public Long getId() { return id; }
     public void setId(Long id) { this.id = id; }
 

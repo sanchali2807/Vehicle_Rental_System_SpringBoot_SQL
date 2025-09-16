@@ -18,21 +18,10 @@ public class VehicleController {
         this.service = service;
     }
 
-    // @PostMapping
-    // public Vehicle addVehicle(@RequestBody Vehicle vehicle) {
-    //     return service.addVehicle(vehicle);
-    // }
     @PostMapping
-public Vehicle addVehicle(@RequestBody Vehicle vehicle) {
-    try {
+    public Vehicle addVehicle(@RequestBody Vehicle vehicle) {
         return service.addVehicle(vehicle);
-    } catch (Exception e) {
-        e.printStackTrace(); // see why it’s failing
-        throw e; // or return ResponseEntity.status(500).build();
     }
-}
-
-
     @GetMapping
     public List<Vehicle> listVehicles() {
         return service.listVehicles();

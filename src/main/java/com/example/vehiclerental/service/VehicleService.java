@@ -31,23 +31,6 @@ public class VehicleService {
     repo.deleteById(id);
 }
 
-
-    // public void deleteVehicle(Long id) {
-    //     repo.deleteById(id);
-    //     System.out.println("❌ Deleted Vehicle ID: " + id);
-    // }
-
-    // public Vehicle rentVehicle(Long id) {
-    //     Optional<Vehicle> v = repo.findById(id);
-    //     if (v.isPresent()) {
-    //         Vehicle vehicle = v.get();
-    //         vehicle.setRented(true);
-    //         System.out.println("🚙 Vehicle rented: " + vehicle.getModel());
-    //         return repo.save(vehicle);
-    //     }
-    //     return null;
-    // }
-
     public Vehicle rentVehicle(Long id) {
     Vehicle vehicle = repo.findById(id)
         .orElseThrow(() -> new RuntimeException("Vehicle not found with ID: " + id));
